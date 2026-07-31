@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chinook Theatre — Ticket Cost Calculator</title>
+  <!-- style sheet -->
+  <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+  <div class="card">
+    <h1>🎟️ Chinook Theatre — Ticket Calculator</h1>
+    <p class="lead">Choose a ticket type and quantity to see your order total.</p>
+
+    <label for="ticket-type">Ticket Type</label>
+    <select id="ticket-type">
+      <option value="25">General Admission — $25</option>
+      <option value="45" selected>Premium — $45</option>
+      <option value="75">VIP — $75</option>
+    </select>
+
+    <label for="quantity">Number of Tickets</label>
+    <input type="number" id="quantity" value="1" min="1" step="1">
+
+    <button id="calculate-button">Calculate Total</button>
+
+    <div id="result"></div>
+
+    <p class="fine-print">Groups of 10 or more receive a 10% discount. A $2.50 booking fee applies per order.</p>
+  </div>
+
+  <!-- javascript -->
+  <script src="scripts/app.js"></script>
+</body>
+</html>
